@@ -18,12 +18,13 @@ export class WateringsComponent implements OnInit {
 
   ngOnInit(): void {
     this.apiService.getWaterings().then(data => {
-      console.log(data);
+      this.waterings = data;
     });
     this.apiService.getPlants().then(data => {
       this.plants = data;
     });
   }
+
 
   addWatering(plantId: number, amount: number) {
     const newWatering = { plantId, amount };

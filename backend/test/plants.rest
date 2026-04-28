@@ -4,7 +4,7 @@ GET http://localhost:3000/plants
 
 ### GET A SINGLE PLANT
 
-GET http://localhost:3000/plants/1
+GET http://localhost:3000/plants/5
 
 ### ADD A NEW PLANT
 

@@ -1,1 +1,26 @@
-<p>dashboard works!</p>
+<div class="container">
+    <h2>Statistics</h2>
+    <br>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Plant</th>
+      <th scope="col">Species</th>
+      <th scope="col">Last Watered date</th>
+      <th scope="col">Average Watering Amount</th>
+      <th scope="col">Total water amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let statistic of statistics; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ statistic.plant_name }}</td>
+      <td>{{ statistic.species}}</td>
+      <td>{{ statistic.last_watered_date }}</td>
+      <td>{{ statistic.average_amount_ml }}</td>
+      <td>{{ statistic.total_watered_ml }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

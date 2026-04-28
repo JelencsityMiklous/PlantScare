@@ -12,9 +12,9 @@ app.use(express.json());
 
 app.use('/plants', plantsRoutes);
 app.use('/statistics', statisticsRoutes);
-app.use('/:id/waterings', wateringRoutes);
+app.use('/waterings', wateringRoutes);
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Welcome to the PlantScare API');
 });
 

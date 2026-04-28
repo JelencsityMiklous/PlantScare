@@ -11,6 +11,8 @@ app.get('/', async (req, res) => {
   }
 });
 
+
+
 app.get('/:id', async (req, res) => {
   const plantId = req.params.id;
   try {
@@ -24,6 +26,9 @@ app.get('/:id', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
+
+
 
 app.post('/', async (req, res) => {
   const newPlant = req.body;

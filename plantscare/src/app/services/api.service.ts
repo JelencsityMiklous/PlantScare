@@ -63,4 +63,8 @@ export class ApiService {
     }).then(response => response.json());
   }
 
+  getStatistics() {
+    return fetch(`${this.SERVER_URL}/statistics`).then(response => response.json());
+  }
+
 }

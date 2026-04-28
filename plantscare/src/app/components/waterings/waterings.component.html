@@ -1,5 +1,7 @@
 <div class="container">
 
+    <h2>Waterings</h2>
+
 <select class="form-select" aria-label="Default select example">
   <option *ngFor="let plant of plants" [value]="plant.id">{{ plant.name }}</option>
 </select>
@@ -15,13 +17,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let watering of waterings">
-      <th scope="row">{{ watering.id }}</th>
-      <td>{{ watering.date }}</td>
-      <td>{{ watering.amount }}</td>
+    <tr *ngFor="let watering of waterings; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ watering.date_watered }}</td>
+      <td>{{ watering.amount_ml }}</td>
       <td>{{ watering.notes }}</td>
       <td>
-        <button (click)="deleteWatering(watering.id)">Delete</button>
+        <button class="btn btn-danger btn-sm" (click)="deleteWatering(watering.id)">Delete</button>
       </td>
     </tr>
   </tbody>
