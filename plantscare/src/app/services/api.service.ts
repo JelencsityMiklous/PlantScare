@@ -29,7 +29,7 @@ export class ApiService {
 
   editPlant(id: number, plant: any) {
     return fetch(`${this.SERVER_URL}/plants/${id}`, {
-      method: 'PUT',
+      method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
       },

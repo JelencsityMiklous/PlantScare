@@ -12,10 +12,10 @@
   </div>
   <div class="mb-3">
     <label for="plantWatering" class="form-label">Watering</label>
-    <input type="text" class="form-control" name="plantWatering" id="plantWatering" aria-describedby="plantWateringHelp">
+    <input type="number" class="form-control" name="plantWatering" id="plantWatering" aria-describedby="plantWateringHelp">
   </div>
 
-  <button type="submit" class="btn btn-primary" >Submit</button>
+  <button type="submit" class="btn btn-primary" (click)="addPlant(plantName, plantSpecies, plantWatering)">Submit</button>
 </form>
 
 

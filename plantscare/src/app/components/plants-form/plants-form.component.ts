@@ -11,7 +11,10 @@ import { NgFor } from '@angular/common';
 })
 export class PlantsFormComponent implements OnInit{
 
-  
+  plantName: string = '';
+  plantSpecies: string = '';
+  plantWatering: number = 0;
+
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
