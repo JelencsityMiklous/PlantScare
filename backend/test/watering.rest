@@ -1,0 +1,14 @@
+### GET WATERINGS BY ID
+
+GET http://localhost:3000/:id/waterings
+Content-Type: application/json
+
+### ADD A NEW WATERING
+POST http://localhost:3000/:id/waterings
+Content-Type: application/json
+
+{
+  "date": "2023-03-15",
+  "amount": 500,
+  "notes": "Watered in the morning"
+}

@@ -1,0 +1,22 @@
+<div class="container">
+
+
+    <form>
+  <div class="mb-3">
+    <label for="plantName" class="form-label">Plant name</label>
+    <input type="text" class="form-control" name="plantName" id="plantName" aria-describedby="plantNameHelp">
+  </div>
+  <div class="mb-3">
+    <label for="plantSpecies" class="form-label">Plant species</label>
+    <input type="text" class="form-control" name="plantSpecies" id="plantSpecies" aria-describedby="plantSpeciesHelp">
+  </div>
+  <div class="mb-3">
+    <label for="plantWatering" class="form-label">Watering</label>
+    <input type="text" class="form-control" name="plantWatering" id="plantWatering" aria-describedby="plantWateringHelp">
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="addPlant(plantName.value, plantSpecies.value, plantWatering.value)">Submit</button>
+</form>
+
+
+</div>

@@ -1,0 +1,31 @@
+### GET ALL PLANTS
+
+GET http://localhost:3000/plants
+
+### GET A SINGLE PLANT
+
+GET http://localhost:3000/plants/1
+
+### ADD A NEW PLANT
+
+POST http://localhost:3000/plants
+Content-Type: application/json
+
+{
+  "name": "teszt12021",
+  "species": "dasdadsada20120",
+  "water_interval_days": 52
+}
+
+### UPDATE A PLANT
+
+PATCH http://localhost:3000/plants/1
+Content-Type: application/json
+
+{
+  "name": "Updated Fern"
+}
+
+### DELETE A PLANT
+
+DELETE http://localhost:3000/plants/1
